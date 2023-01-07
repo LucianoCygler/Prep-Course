@@ -5,20 +5,48 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x > y) {
+    return x;
+  }
+  else if (y > x) {
+    return y;
+  }
+  else {
+    return x;
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad >= 18) {
+    var permiso = "Allowed";
+    return permiso;
+  }
+  else {
+    var permiso = "Not allowed";
+    return permiso;
+  }
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  switch (status) {
+    case 1:
+      var usuario = "Online";
+      return usuario;
+    case 2:
+      var usuario = "Away";
+      return usuario;
+    default:
+      var usuario = "Offline";
+      return usuario;
+  }
 }
 
 function saludo(idioma) {
@@ -28,6 +56,28 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
+  switch (idioma) {
+    case "aleman":
+      var respuesta = "Guten Tag!";
+      return respuesta;
+
+    case "mandarin":
+      var respuesta = "Ni Hao!";
+      return respuesta;
+
+    case "ingles":
+      var respuesta = "Hello!";
+      return respuesta;
+    
+    default:
+      var respuesta = "Hola!";
+      return respuesta;
+
+
+
+  }
+
 }
 
 function colors(color) {
@@ -86,24 +136,24 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 }
 
-function esVerdadero(valor){
+function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
 }
 
-function tablaDelSeis(){
+function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+
 }
 
-function tieneTresDigitos(numero){
+function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+
 }
 
 function doWhile(numero) {
