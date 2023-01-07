@@ -258,9 +258,9 @@ function tablaDelSeis() {
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
   var array = [];
-  for(i=0;i<10;i++){
+  for(i=1;i<10;i++){
 
-   array[i]=6*(i+1);
+   array[i-1]=6*i;
   }
   return array;
 }
