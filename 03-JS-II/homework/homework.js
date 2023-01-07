@@ -191,15 +191,15 @@ function operadoresLogicos(num1, num2, num3) {
     var respuesta = "Número 1 es mayor y positivo";
     return respuesta;
   }
-  if (num1 < 0 || num2 < 0 || num3 < 0){
+  else if (num1 < 0 || num2 < 0 || num3 < 0){
     var respuesta = "Hay negativos";
     return respuesta;
   }
-  if (num3 > num1 && num3 > num2){
+  else if (num3 > num1 && num3 > num2){
     num3 +=1;
     return num3;
   }
-  if(num1 == 0 || num2 == 0 || num3 == 0){
+  else if(num1 == 0 || num2 == 0 || num3 == 0){
     var respuesta = "Error";
     return respuesta;
   }
