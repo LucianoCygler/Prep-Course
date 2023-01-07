@@ -69,7 +69,7 @@ function saludo(idioma) {
     case "ingles":
       var respuesta = "Hello!";
       return respuesta;
-    
+
     default:
       var respuesta = "Hola!";
       return respuesta;
@@ -88,6 +88,31 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color) {
+    case "blue":
+      var respuesta = "This is blue";
+      return respuesta;
+
+    case "red":
+      var respuesta = "This is red";
+      return respuesta;
+
+    case "green":
+      var respuesta = "This is green";
+      return respuesta;
+
+    case "orange":
+      var respuesta = "This is orange";
+      return respuesta;
+
+
+    default:
+      var respuesta = "Color not found";
+      return respuesta;
+
+
+
+  }
 }
 
 function esDiezOCinco(numero) {
