@@ -260,7 +260,7 @@ function tablaDelSeis() {
   var array = [];
   for(i=0;i<10;i++){
 
-   array[i]=6*i+1;
+   array[i]=6*(i+1);
   }
   return array;
 }
